@@ -1,0 +1,23 @@
+<template>
+  <div class="container">
+   
+    <router-link to="/product">뒤로가기</router-link>
+    <h2>여행상품 목록</h2>
+      <div >
+          <h3>{{listData[$route.params.id].title}}</h3>
+            <div>{{listData[$route.params.id].image}}</div>
+          <p>{{listData[$route.params.id].content}}</p>
+      </div>
+  </div>
+</template>
+
+<script>
+export default {
+    name:'detail',
+    props:['listData']
+}
+</script>
+
+<style>
+
+</style>
