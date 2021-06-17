@@ -5,14 +5,22 @@
     <swiper-slide><img src="image/slide03.jpg" alt=""></swiper-slide>
   </swiper>
 
-  <div class="container">
-    <h2 class="text-center">싱가포르 여행 개별 추천상품</h2>
-    <p>가장 인기많은 싱가포르 베스트 10 여행 상품을 소개합니다.</p>
-    <div class="row">
-      <div class="col-md-3 col-sm-6" v-for="(jwb, i) in listData" :key="i">
-        <img :src="listData[i].image" alt="" class="w-100">
-        {{listData[i].title}}
+  <div class="best">
+    <div class="container">
+      <h2 class="text-center">싱가포르 여행 개별 추천상품</h2>
+      <p>가장 인기많은 싱가포르 베스트 여행 상품을 소개합니다.</p>
+      <div class="row">
+        <div class="col-md-3 col-sm-6" v-for="(jwb, i) in 4" :key="i">
+          <img :src="listData[i].image" alt="" class="w-100">
+          {{listData[i].title}}
+        </div>
       </div>
+
+     
+        <div class="btn btn-primary m-auto d-block" style="width:100px">
+           <router-link to="/product" class="d-block">more</router-link>
+        </div>
+      
     </div>
   </div>
 
