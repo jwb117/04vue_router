@@ -1,7 +1,7 @@
 <template>
   <div class="container">
    
-    <router-link to="/product">뒤로가기</router-link>
+    <router-link to="/tour">뒤로가기</router-link>
     <h2>여행상품 목록</h2>
       <div >
           <h3>{{listData[$route.params.id].title}}</h3>

@@ -27,7 +27,7 @@ export default {
             menu:[
                 {title:"HOME", link:'/'},
                 {title:"COMPANY", link:'/company'},
-                {title:"PRODUCT", link:'/product'}
+                {title:"TOUR", link:'/tour'}
             ]
         }
     }

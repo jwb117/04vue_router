@@ -3,6 +3,7 @@ import home from '../components/home.vue'
 import company from '../components/company.vue'
 import product from '../components/product.vue'
 import detail from '../components/listdetail.vue'
+import view404 from '../components/404.vue'
 
 const routes = [
   {
@@ -14,12 +15,17 @@ const routes = [
     component: company,
   },
   {
-    path: '/product',    
+    path: '/tour',    
     component: product,
   },
   {
     path: '/detail/:id',    
     component: detail,
+  },
+  {
+    path: '/:pathMatch(.*)*',    
+    component: view404,
+    
   },
   
 ]
