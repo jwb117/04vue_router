@@ -6,11 +6,11 @@ import detail from '../components/listdetail.vue'
 
 const routes = [
   {
-    path: '/home',    
+    path: '/',    
     component: home,
   },
   {
-    path: '/company',    
+    path: '/company',
     component: company,
   },
   {
