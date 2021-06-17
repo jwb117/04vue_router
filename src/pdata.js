@@ -46,5 +46,27 @@ export default [{
     image: "https://jwb117.github.io/2021ui-ux_site/assets/img10.png",
     content: "볼거리, 놀거리 가득한 차이나타운 투어",
     price: 40000
-    }
+    },
+    {
+    id : 7,
+    title: "싱가포르 리버 투어",
+    image: "https://jwb117.github.io/2021ui-ux_site/assets/img08.png",
+    content: "한적한 강변을 걸으며 자유를 만끽하는 투어",
+    price: 33000
+    },
+    {
+    id : 8,
+    title: "싱가포르 심장에 위치한 국립박물관",
+    image: "https://jwb117.github.io/2021ui-ux_site/assets/img09.png",
+    content: "시간가는 줄 모르고 보게 되는 싱가포르 박물관투어",
+    price: 20000
+    },
+    {
+    id : 9,
+    title: "아시아 최대 크기, 싱가포르 플라이어 ",
+    image: "https://jwb117.github.io/2021ui-ux_site/assets/img11.png",
+    content: "시내를 내려다 보는 최대 높이에서 야경을 즐겨보세요",
+    price: 25000
+    },
+
 ]

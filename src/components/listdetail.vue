@@ -5,7 +5,7 @@
     <h2>여행상품 목록</h2>
       <div >
           <h3>{{listData[$route.params.id].title}}</h3>
-           <img src="{{listData[$route.params.id].image}}" alt="">
+           <img :src="listData[$route.params.id].image" alt="">
           <p>{{listData[$route.params.id].content}}</p>
       </div>
   </div>

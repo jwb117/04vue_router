@@ -7,7 +7,7 @@
 <script>
 import header from './components/header.vue'
 import footer from './components/footer.vue'
-import listData from './data.js'
+import listData from './pdata.js'
 
 export default {
   name:"app",
