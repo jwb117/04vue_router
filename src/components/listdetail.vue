@@ -1,14 +1,15 @@
 <template>
-  <div class="container">
-   
+
+  <div class="container">   
     <router-link to="/tour" class="btn btn-secondary text-white float-right">뒤로가기</router-link>
     <h2>여행상품 목록</h2>
       <div class="mb-5">
           <h3>{{listData[$route.params.id].title}}</h3>
-           <img :src="listData[$route.params.id].image" alt="">
+           <img :src="listData[$route.params.id].image" class="w-100" alt="">
           <p>{{listData[$route.params.id].content}}</p>
       </div>
   </div>
+
 </template>
 
 <script>

@@ -8,7 +8,7 @@
             </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item" v-for="(jwb, i) in menu" :key="i">
+                        <li class="nav-item" v-for="(jwb, i) in menu" :key="i" @click="close">
                             <router-link :to="menu[i].link">{{menu[i].title}}</router-link>
                         </li>
                         
@@ -30,6 +30,12 @@ export default {
                 {title:"TOUR", link:'/tour'}
             ]
         }
+    },
+    methods:{
+        close:function(){
+            document.getElementById("navbarNav").classList.remove("show")
+        }
+
     }
 }
 </script>
