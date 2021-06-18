@@ -11,10 +11,13 @@
       <p>가장 인기많은 싱가포르 베스트 여행 상품을 소개합니다.</p>
       <div class="row">
         <div class="col-md-3 col-sm-6" v-for="(jwb, i) in 4" :key="i">
-           <router-link :to="`/detail/${listData[i].id}`">
-            <img :src="listData[i].image" alt="" class="w-100">
-            <p class="text-center">{{listData[i].title}}</p>
-           </router-link>
+           <!-- <router-link :to="`/detail/${listData[i].id}`"> -->
+            <img :src="listData[i].image" alt="" class="w-100" @click="$emit('pOpen', listData[i].id)">
+            <div @click="$emit('pOpen', listData[i].id)">{{listData[i].title}}</div>
+            
+              <!-- <p class="text-center">{{listData[i].title}}</p> -->
+            
+           <!-- </router-link> -->
         </div>
       </div>
 
