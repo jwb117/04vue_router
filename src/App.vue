@@ -1,4 +1,9 @@
 <template>
+
+  <div v-if="pView==true">
+    1
+  </div>
+
   <jwb-header/>
   <router-view :listData="listData"></router-view>
   <jwb-footer/>
@@ -20,6 +25,7 @@ export default {
   data(){
     return{
       listData:listData,
+      pView:false,
     }
   }
 
